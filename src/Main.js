@@ -1,35 +1,40 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 
-import { styled } from '@mui/material/styles';
-import resume from '../public/resume.png';
-
-  
 export default function Main() {
-return (
+  return (
     <Container sx={{
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'space-between',
-        justifyContent: 'space-between',
-        width: '100%',
-        padding: '10px',
-        border: '1px solid red',
-    }}>
-        {/* <img className='' elevation={3} style={{ maxWidth: '50vw' }} src='resume.png' alt="resume"/> */}
+        alignItems: 'stretch',
+        minHeight: '100%',
+        height: '100%',
+     }} >
         <Box sx={{
-            border: '1px solid red',
-        }} >
-            <Typography>Hi</Typography>
+            backgroundColor: 'transparent',
+            border: '1px solid white',
+            alignItems: 'center',
+            flexGrow: 1,
+            p: 2,
+        }}>
+
+            <Typography variant="h3" component="h3" gutterBottom sx={{ mt: '20vh', textAlign: 'right', }}>
+                Hi, I'm Katie
+            </Typography>
         </Box>
-        <Box >
-            <Typography>Hi</Typography>
+        <Box elevation={3} sx={{
+            backgroundColor: 'rgba(20, 25, 31, .5)',
+            borderRadius: '20px',
+            flexGrow: 2,
+            p: 2,
+        }}>
+            <Typography variant="h4" component="h1" gutterBottom>
+                Hi
+            </Typography>
         </Box>
     </Container>
-);
+  );
 }

@@ -31,7 +31,7 @@ export default function Index() {
         alignItems: 'stretch',
         minHeight: '100vh',
         height: '100vh',
-        backgroundImage: 'radial-gradient(circle, #262626, #1a1a1a, #0d0d0d)',
+        backgroundImage: 'radial-gradient(circle, #28313e, #1e252f, #14191f)',
       }}
     >
 
@@ -44,13 +44,12 @@ export default function Index() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'stretch',
+          flexGrow: 1,
+          p: 2,
         }}
       >
         <Main />
-        <Link href="/about" color="secondary">
-          Go to the about page
-        </Link>
-        <ProTip />
+
       </Box>
 
       {/* Footer */}
